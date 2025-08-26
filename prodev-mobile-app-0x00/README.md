@@ -48,3 +48,37 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+# First Expo App with Router
+
+## Steps for Scaffolding
+1. Navigated to the project directory:
+   ```bash
+   cd prodev-mobile-setup
+ 
+ 2. Initialized the project with the Expo Router template:
+npx create-expo-app@latest .
+
+3. Modified app/(tabs)/index.tsx:
+Changed Welcome! → First App Created.
+
+4. Started the project:
+npx expo start
+
+5. Scanned QR code in Expo Go to view on mobile.
+
+## Observations from npm run reset-project
+Cleared node_modules and reinstall dependencies.
+Reset caches, making the project “fresh.”
+After reset, the first run took longer since packages and caches were rebuilt.
+Project functionality (the modified text First App Created) was preserved.
+
+
+---
+
+✅ That completes the full cycle: **scaffold → edit → run → reset → document.**
+
+---
+
+👉 Do you want me to prepare the exact **code snippet** of `app/(tabs)/index.tsx` *after modification*, so you can copy-paste directly?
