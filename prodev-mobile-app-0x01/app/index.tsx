@@ -6,15 +6,6 @@ export default function Index() {
       <Text>Entry Screen - Awesome</Text>
 
  
-      <View>
-
-     <Text style={styles.largeText}>This is number 1and is a Large text</Text>
-
-      <Text style={styles.mediumText}>This is number 1and is a meduim text</Text>
-
-      <Text style={styles.smallText}>This is number 1and is a small text</Text>
-
-      </View>
     <View>
   <Text style={styles.largeText}>Typescript is great if you practice more</Text>
   <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
