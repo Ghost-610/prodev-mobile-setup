@@ -1,84 +1,36 @@
-# Welcome to your Expo app 👋
+# First Expo App with Router 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project was created with [Expo](https://expo.dev) using the [`create-expo-app`](https://www.npmjs.com/package/create-expo-app) command.
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-
-# First Expo App with Router
+---
 
 ## Steps for Scaffolding
-1. Navigated to the project directory:
+
+1. Navigated to the parent project directory:
    ```bash
    cd prodev-mobile-setup
- 
- 2. Initialized the project with the Expo Router template:
+2. Initialized the project with the Expo Router template:
 npx create-expo-app@latest .
-
-3. Modified app/(tabs)/index.tsx:
-Changed Welcome! → First App Created.
-
-4. Started the project:
+Modified app/(tabs)/index.tsx:
+Changed the default text:
+<Text>Welcome!</Text>
+to
+<Text> First App Created</Text>
+Started the project:
 npx expo start
-
-5. Scanned QR code in Expo Go to view on mobile.
-
-## Observations from npm run reset-project
-Cleared node_modules and reinstall dependencies.
-Reset caches, making the project “fresh.”
-After reset, the first run took longer since packages and caches were rebuilt.
-Project functionality (the modified text First App Created) was preserved.
-
-
----
-
-✅ That completes the full cycle: **scaffold → edit → run → reset → document.**
-
----
-
-👉 Do you want me to prepare the exact **code snippet** of `app/(tabs)/index.tsx` *after modification*, so you can copy-paste directly?
+For iOS: Scan the QR code with the Camera app.
+For Android: Scan the QR code with the Expo Go app.
+Verified the app showed First App Created on the screen.
+Observations from npm run reset-project
+When I ran:
+npm run reset-project
+the following happened:
+Cleared the node_modules folder and caches.
+Reinstalled dependencies, so the first run after reset took longer.
+Moved the previous project files into a backup directory called app-example/.
+This included:
+app-example/app/(tabs)/index.tsx
+app-example/constants/Colors.tsx
+and other related files.
+Created a fresh app/ folder with a clean Expo Router scaffold.
+👉 Important: My modified code (First App Created) is in the new app/(tabs)/index.tsx, not inside the backup app-example folder.
